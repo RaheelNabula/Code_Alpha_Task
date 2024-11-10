@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Book Library</title>
+  <link rel="stylesheet" href="p stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>My Personal Book Library</h1>
+    <input type="text" id="search" placeholder="Search books...">
+  </header>
+  
+  <main>
+    <div id="categories">
+      <button onclick="filterBooks('all')">All</button>
+      <button onclick="filterBooks('fiction')">Fiction</button>
+      <button onclick="filterBooks('nonfiction')">Non-Fiction</button>
+      <button onclick="filterBooks('fantasy')">Fantasy</button>
+    </div>
+    <div id="book-list"></div>
+  </main>
+  
+  <footer>
+    <p>Borrowing History:</p>
+    <ul id="history"></ul>
+  </footer>
+
+  <script src="p javascript.js"></script>
+</body>
+</html>
